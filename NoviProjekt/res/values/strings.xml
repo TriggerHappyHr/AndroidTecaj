@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NoviProjekt</string>
+    <string name="button">Klikni me</string>
+    <string name="edit_Text">neki tekst</string>
+    <string name="hint">unesi nešto</string>
+    <string name="prviButton">Klikni me</string>
+    
+    <string name="title_activity_second">Drugi activity</string>
+    <string name="activity_second">Settings</string>
+    <string name="drugi_text">Evo ga i drugi activity</string>
+
+</resources>
