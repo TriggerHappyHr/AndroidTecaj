@@ -1,6 +1,7 @@
 package biz.osvit.testiranje.activities;
 
 import biiz.osvit.testiranje.R;
+import biz.osvit.testiranje.models.UserModel;
 import biz.osvit.testiranje.utils.C;
 import android.os.Bundle;
 import android.content.Intent;
@@ -68,9 +69,14 @@ public class MainActivity extends BaseActivity {
 	
 	private void pokreniDrugiActivity (String ime, String prezime, String adresa){
 		Intent namjera = new Intent(this, SecondActivity.class);
-		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_IME, ime);
+/*		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_IME, ime);
 		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_PREZIME, prezime);
-		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_ADRESA, adresa);
+		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_ADRESA, adresa);*/
+		UserModel model = new UserModel();
+		model.setFirstName(ime);
+		model.setLastName(prezime);
+		model.setAddress(adresa);
+		namjera.putExtra(C.MAIN_ACTIVITY_BUNDLE_KEY_USER, model);
 		startActivity(namjera);
 	}
 
