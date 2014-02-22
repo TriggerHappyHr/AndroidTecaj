@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Testiranje</string>
+    <string name="action_settings">Settings</string>
+    <string name="ime">Ime</string>
+    <string name="prezime">Prezime</string>
+    <string name="potvrdi">Potvrdi</string>
+    <string name="adresa">Adresa</string>
+    
+    <string name="title_activity_second">Drugi aktiviti :)</string>
+    
+  	<string name="activity_main_cancel">Očisti</string>
+
+</resources>
